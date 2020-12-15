@@ -81,3 +81,6 @@ database:
 search:
   type: "Database"
 
+mirror:
+  enabled: true
+  packagesource: "https://api.nuget.org/v3/index.json"
