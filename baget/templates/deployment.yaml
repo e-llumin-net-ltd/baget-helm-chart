@@ -40,6 +40,10 @@ spec:
             value: {{ .Values.database.type }}
           - name: DATABASE__CONNECTIONSTRING
             value: {{ .Values.database.connectionString }}
+          - name: MIRROR__ENABLED
+            value: {{ .Values.mirror.enabled }}
+          - name: MIRROR__PACKAGESOURCE
+            value: {{ .Values.mirror.packagesource }}
           ports:
             - name: http
               containerPort: 80
