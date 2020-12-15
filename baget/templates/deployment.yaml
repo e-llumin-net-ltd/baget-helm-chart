@@ -41,7 +41,7 @@ spec:
           - name: DATABASE__CONNECTIONSTRING
             value: {{ .Values.database.connectionString }}
           - name: MIRROR__ENABLED
-            value: {{ .Values.mirror.enabled }}
+            value: {{ .Values.mirror.enabled | quote }}
           - name: MIRROR__PACKAGESOURCE
             value: {{ .Values.mirror.packagesource }}
           ports:
